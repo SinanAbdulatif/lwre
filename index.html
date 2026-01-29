@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export & Import Practical Training | Rimshad Exporter</title>
+    <meta name="description" content="A one-month professional program focused on practical execution. Participate in a real export consignment.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0f172a',
+                            lightBlue: '#1e3a8a',
+                            gold: '#fbbf24',
+                            goldHover: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1494412651409-ae1e0954332e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fa-solid fa-ship text-brand-lightBlue text-3xl"></i>
+                        <div>
+                            <span class="font-bold text-xl tracking-tight text-gray-900 block leading-none">Port Exim</span>
+                            <span class="text-xs text-gray-500 font-medium">Ventures Pvt Ltd</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-brand-lightBlue font-medium transition">About</a>
+                    <a href="#curriculum" class="text-gray-600 hover:text-brand-lightBlue font-medium transition">Curriculum</a>
+                    <a href="#schedule" class="text-gray-600 hover:text-brand-lightBlue font-medium transition">Schedule</a>
+                    <a href="#pricing" class="bg-brand-lightBlue text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5">Enroll Now</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50">About</a>
+                <a href="#curriculum" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50">Curriculum</a>
+                <a href="#schedule" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50">Schedule</a>
+                <a href="#pricing" class="block px-3 py-2 text-base font-medium text-brand-lightBlue font-bold">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen min-h-[600px] flex items-center relative pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white space-y-6 animate-fade-in-up">
+                    <span class="inline-block bg-brand-gold text-brand-blue px-3 py-1 rounded-sm font-bold text-sm tracking-wide uppercase mb-2">Practical Training Program</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                        Don't Just Learn Exporting. <br>
+                        <span class="text-brand-gold">Do It.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-200 max-w-xl">
+                        A one-month professional program where you participate in a <strong>real export consignment</strong> to the GCC. Zero theory fluff, 100% practical execution.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#pricing" class="bg-brand-gold text-brand-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition shadow-lg text-center">
+                            Start Your Journey
+                        </a>
+                        <a href="#video-intro" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-brand-blue transition text-center">
+                            View Syllabus
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Card/Image -->
+                <div class="hidden md:block relative">
+                    <div class="bg-white rounded-xl shadow-2xl p-6 transform rotate-2 hover:rotate-0 transition duration-500">
+                        <div class="flex items-center gap-4 mb-4 border-b pb-4">
+                            <img src="https://ui-avatars.com/api/?name=Rimshad+Exporter&background=0D8ABC&color=fff" alt="Trainer" class="w-16 h-16 rounded-full">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-900">Rimshad Exporter</h3>
+                                <p class="text-sm text-gray-500">Lead Trainer & Exporter</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 text-gray-700 bg-gray-50 p-3 rounded-lg">
+                                <i class="fas fa-calendar-check text-brand-lightBlue"></i>
+                                <span class="font-medium">Starts Soon - Limited Seats</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-gray-700 bg-gray-50 p-3 rounded-lg">
+                                <i class="fas fa-box-open text-brand-lightBlue"></i>
+                                <span class="font-medium">Real Consignment Guaranteed</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-gray-700 bg-gray-50 p-3 rounded-lg">
+                                <i class="fas fa-certificate text-brand-lightBlue"></i>
+                                <span class="font-medium">Double Certification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- The USP Section -->
+    <section class="py-16 bg-white" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why This Course is Different</h2>
+                <p class="mt-4 text-xl text-gray-600">Most courses teach you definitions. We teach you execution.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-brand-lightBlue w-24 h-24 rounded-bl-full -mr-12 -mt-12 transition group-hover:bg-brand-gold"></div>
+                    <i class="fas fa-people-carry text-4xl text-brand-lightBlue mb-6 group-hover:text-brand-gold transition"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Real Export Guarantee</h3>
+                    <p class="text-gray-600">Every student participates in at least one actual export consignment from Kerala to a GCC country (like UAE). You don't just watch; you do it.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-brand-lightBlue w-24 h-24 rounded-bl-full -mr-12 -mt-12 transition group-hover:bg-brand-gold"></div>
+                    <i class="fas fa-building text-4xl text-brand-lightBlue mb-6 group-hover:text-brand-gold transition"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">No Company Needed</h3>
+                    <p class="text-gray-600">You don't need to register a personal company to start learning. The export is executed through our company, Port Exim Ventures, under your management.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 bg-brand-lightBlue w-24 h-24 rounded-bl-full -mr-12 -mt-12 transition group-hover:bg-brand-gold"></div>
+                    <i class="fas fa-file-contract text-4xl text-brand-lightBlue mb-6 group-hover:text-brand-gold transition"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Practical Documentation</h3>
+                    <p class="text-gray-600">Learn to draft Proforma Invoices, Packing Lists, and handle Shipping Bills & BLs. We focus on the paperwork that actually gets goods across borders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Mode Section -->
+    <section class="py-16 bg-slate-900 text-white" id="schedule">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Left: Mode Details -->
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-gold mb-6">Course Duration & Mode</h2>
+                    <p class="text-lg text-gray-300 mb-8">A flexible blend of recorded content for pacing and live sessions for interaction.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-800 p-3 rounded-lg">
+                                <i class="fas fa-video text-white text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Recorded Video Lectures</h3>
+                                <p class="text-gray-400">Shared via Private WhatsApp Group. Watch anytime at your own pace.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-800 p-3 rounded-lg">
+                                <i class="fas fa-broadcast-tower text-white text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Live Google Meet Sessions</h3>
+                                <p class="text-gray-400"><strong>Time:</strong> 10:00 PM – 11:00 PM (IST)</p>
+                                <p class="text-gray-400">Includes explanations, Q&A, and practical guidance by Rimshad Exporter.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-blue-800 p-3 rounded-lg">
+                                <i class="fas fa-language text-white text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold">Language</h3>
+                                <p class="text-gray-400">Simple, professional English tailored for international trade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Physical Class Highlight -->
+                <div class="bg-gradient-to-br from-blue-800 to-blue-900 rounded-2xl p-8 border border-blue-700 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-brand-gold opacity-20 rounded-full blur-2xl"></div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-6 border-b border-blue-600 pb-4">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i> Physical Practical Day
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center bg-blue-900/50 p-4 rounded-lg">
+                            <span class="text-gray-300">Date</span>
+                            <span class="font-bold text-brand-gold text-lg">1 March 2026</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-blue-900/50 p-4 rounded-lg">
+                            <span class="text-gray-300">Time</span>
+                            <span class="font-bold text-white">9:00 AM – 5:00 PM</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-blue-900/50 p-4 rounded-lg">
+                            <span class="text-gray-300">Location</span>
+                            <span class="font-bold text-white text-right">Kottakkal, Malappuram</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-blue-900/50 p-4 rounded-lg">
+                            <span class="text-gray-300">Perks</span>
+                            <span class="font-bold text-green-400"><i class="fas fa-utensils mr-2"></i>Lunch Included</span>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6 text-sm text-gray-400 italic text-center">
+                        *This is the only physical class. All other practical activities are conducted online.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="py-16 bg-gray-50" id="curriculum">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">What You Will Learn</h2>
+                <p class="mt-4 text-gray-600">A comprehensive syllabus designed to make you a confident exporter.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Topics -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lightBlue">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Core Concepts</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span>Export & Import Fundamentals</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span>Export–Import Terms (Incoterms)</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span>Sample Sending Procedures</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span>Buyer Communication Techniques</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span>Payment Terms & Bank Procedures</span></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i><span>Export Risk Management</span></li>
+                    </ul>
+                </div>
+
+                <!-- Documentation -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-gold">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Documentation & Licenses</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-file-invoice mr-2 text-brand-lightBlue"></i> Proforma Invoice</li>
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-file-invoice-dollar mr-2 text-brand-lightBlue"></i> Commercial Invoice</li>
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-box mr-2 text-brand-lightBlue"></i> Packing List</li>
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-shipping-fast mr-2 text-brand-lightBlue"></i> Shipping Bill</li>
+                        </ul>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-anchor mr-2 text-brand-lightBlue"></i> Bill of Lading</li>
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-certificate mr-2 text-brand-lightBlue"></i> Cert. of Origin</li>
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-id-card mr-2 text-brand-lightBlue"></i> IEC Code</li>
+                            <li class="flex items-center text-gray-700 font-medium"><i class="fas fa-registered mr-2 text-brand-lightBlue"></i> RCMC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty & Certificates -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Faculty -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Led by Experts</h2>
+                    <div class="bg-gray-50 p-6 rounded-xl inline-block w-full">
+                        <div class="flex flex-col md:flex-row items-center gap-6">
+                            <div class="bg-brand-lightBlue text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+                                R
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Rimshad Exporter</h3>
+                                <p class="text-brand-lightBlue font-medium">Lead Trainer</p>
+                                <p class="text-sm text-gray-500 mt-1">Backed by Port Exim Ventures Pvt Ltd</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-gray-600">
+                            Learn directly from an active exporter who understands the current market dynamics, risks, and ground realities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+                <div class="bg-yellow-50 border border-yellow-100 p-8 rounded-xl text-center">
+                    <i class="fas fa-award text-5xl text-brand-gold mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Double Certification</h3>
+                    <p class="text-gray-600 mb-6">Validate your skills with official recognition upon completion.</p>
+                    <div class="space-y-3 text-left max-w-xs mx-auto">
+                        <div class="flex items-center bg-white p-3 rounded shadow-sm">
+                            <i class="fas fa-star text-brand-gold mr-3"></i>
+                            <span class="font-semibold text-sm">Course Completion Certificate</span>
+                        </div>
+                        <div class="flex items-center bg-white p-3 rounded shadow-sm">
+                            <i class="fas fa-globe-americas text-brand-gold mr-3"></i>
+                            <span class="font-semibold text-sm">Practical Export Participation Certificate</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-12 bg-gray-100 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Who Is This Course For?</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-seedling text-3xl text-green-500 mb-3"></i>
+                    <h4 class="font-bold text-gray-800">Complete Beginners</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-briefcase text-3xl text-blue-500 mb-3"></i>
+                    <h4 class="font-bold text-gray-800">Business Owners</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-user-graduate text-3xl text-red-500 mb-3"></i>
+                    <h4 class="font-bold text-gray-800">Students</h4>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+                    <i class="fas fa-plane-departure text-3xl text-purple-500 mb-3"></i>
+                    <h4 class="font-bold text-gray-800">Aspiring Exporters</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & CTA Section -->
+    <section class="py-20 bg-white" id="pricing">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Invest in Your Future</h2>
+            <p class="text-xl text-gray-600 mb-10">Transform from a beginner to a practical exporter in just 30 days.</p>
+
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200 relative">
+                <div class="bg-brand-lightBlue py-6">
+                    <h3 class="text-white font-bold text-2xl uppercase tracking-wider">Course Fee</h3>
+                </div>
+                <div class="p-10">
+                    <div class="flex justify-center items-baseline mb-6">
+                        <span class="text-5xl font-extrabold text-gray-900">₹13,800</span>
+                        <span class="text-xl text-gray-500 ml-2">only</span>
+                    </div>
+                    
+                    <div class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-bold mb-8 animate-pulse">
+                        🎯 Limited Seats Available
+                    </div>
+
+                    <ul class="text-left space-y-4 mb-8 max-w-md mx-auto">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> 1 Month Practical Training</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Real Consignment Participation</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Private WhatsApp Group Access</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Physical Class (Lunch Included)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Double Certification</li>
+                    </ul>
+
+                    <button onclick="alert('Thank you for your interest! Please contact Port Exim Ventures to finalize your enrollment.')" class="w-full md:w-auto bg-brand-gold hover:bg-yellow-400 text-brand-blue font-bold text-xl py-4 px-12 rounded-lg shadow-lg transition transform hover:scale-105">
+                        Enroll Now
+                    </button>
+                    <p class="mt-4 text-sm text-gray-500">Secure your spot for the March 2026 batch today.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Port Exim Ventures Pvt Ltd</h3>
+                    <p class="text-sm leading-relaxed">
+                        Empowering the next generation of exporters through practical, hands-on training and real-world exposure.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-white transition">About Course</a></li>
+                        <li><a href="#schedule" class="hover:text-white transition">Class Schedule</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Enrollment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 w-4"></i> Kottakkal, Malappuram</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 w-4"></i> info@portexim.com</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-3 w-4"></i> +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 Port Exim Ventures Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
